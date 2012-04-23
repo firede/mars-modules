@@ -1,0 +1,49 @@
+<module id="theme" name="theme.template">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{{data.meta.title}}}</title>
+    <link rel="stylesheet" href="http://x.libdd.com/farm1/90ecce/964ef5b0/DA232.css">
+    <link rel="stylesheet" href="http://t.libdd.com/css/base/rich-content.css">
+</head>
+<body>
+    <div class="header">
+    <h1>{{{data.global.name}}}</h1>
+    {{#data.global.description}}
+        <div class="description">{{{data.global.description}}}</div>
+    {{/data.global.description}}
+  </div>
+    <div class="posts">
+        {{#data.posts}}
+        <div class="post" type="post-{{id}}">
+            {{^link}}{{#title}}<h3 class="title">{{{title}}}</h3>{{/title}}{{/link}}
+            {{#link}}
+                <h3 class="title">
+                    <a href="{{link_url}}" target="_blank">
+                        {{#title}}{{{title}}}{{/title}}
+                        {{^title}}{{{link_url}}}{{/title}}
+                    </a>
+                </h3>
+            {{/link}}
+            {{#content}}<div class="entry rich-content">{{{content}}}</div>{{/content}}
+            {{#photos}}
+                <div class="img-holder"><img src="{{500.src}}" /></div>
+                {{#description}}<div class="img-desc">{{{description}}}</div>{{/description}}
+            {{/photos}}
+            {{#player}}<div class="player">{{{player}}}</div>{{/player}}
+            {{#description}}<div class="entry rich-content">{{{description}}}</div>{{/description}}
+        </div>
+        {{/data.posts}}
+    </div>
+</body>
+</html>
+</module>
+
+<script type="server/javascript">
+    // 用Mustache渲染一个简易模板
+    // Mustache.js的用法请参考：https://github.com/janl/mustache.js
+    var Mu = require('dd://modules/mustache/0.5.0-dev/mustache'),
+        code = Mu.render(dian.modules.theme, { data: dian.data });
+    write(code);
+</script>
