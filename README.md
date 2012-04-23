@@ -1,14 +1,16 @@
 Mars Modules
 ======================
 
-Mars的模块系统遵循CommonJS规范，所以很多符合CommonJS规范的开源模块可以直接在Mars下使用（比如部分NodeJS模块）。
+Mars的模块系统遵循CommonJS规范，所以在Mars支持的权限范围内，有很多CommonJS模块可以直接在Mars下使用（比如部分NodeJS模块、RequireJS模块）。
 
-D-Lab团队官方支持了一些开源模块，可以直接在Mars下调用。
+D-Lab团队托管了一些开源模块，以便大家调用。
+
+如果你有优秀的模块想要与大家分享，可以[告诉我们](https://github.com/d-lab/mars-modules/issues)，我们会将质量及适应程度较高的模块托管在官方模块仓库里。
 
 目录结构
 ----------------
 
-* __repo__: 模块版本库
+* __repo__: 模块仓库
     * __underscore__
     ( [主页](http://documentcloud.github.com/underscore/) ):
     Underscore.js是一个实用的JavaScript工具框架，提供了与Prototype.js（或Ruby）相似的功能编程支持，但没有对 JavaScript 内置的对象进行扩展。
@@ -39,7 +41,7 @@ D-Lab团队官方支持了一些开源模块，可以直接在Mars下调用。
 ```javascript
 var _ = require("dd://modules/underscore/1.3.3/underscore"),
     n = _.min([6, 2, 8, 9, 3]);
-write(n); // 2
+write(n); // 页面输出：2
 ```
 
 官方托管模块路径的规则是：
