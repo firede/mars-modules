@@ -31,3 +31,19 @@ D-Lab团队官方支持了一些开源模块，可以直接在Mars下调用。
     ( [主页](https://github.com/NV/CSSOM) ):
     CSSOM是一个用原生JavaScript写的CSS解析器，它部分实现了CSS对象模型。
 
+使用方法
+----------------
+
+在Mars环境下，模板页面通过require来引入一个模块，如：
+
+```javascript
+var _ = require("dd://modules/underscore/1.3.3/underscore"),
+    n = _.min([6, 2, 8, 9, 3]);
+write(n); // 2
+```
+
+官方托管模块路径的规则是：
+
+    dd://modules/ + 模块文件路径（repo目录下）
+
+后缀`.js`可不加。
