@@ -32,6 +32,7 @@ D-Lab团队托管了一些开源模块，以便大家调用。
     * __cssom__
     ( [主页](https://github.com/NV/CSSOM) ):
     CSSOM是一个用原生JavaScript写的CSS解析器，它部分实现了CSS对象模型。
+* __examples__: 模块使用示例
 
 使用方法
 ----------------
