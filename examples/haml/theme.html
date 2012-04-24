@@ -3,31 +3,31 @@
 %html
   %head
     %meta{ charset: "utf-8" }
-    %title= data.meta.title
+    %title!= data.meta.title
     %link{ rel: "stylesheet", href: "http://x.libdd.com/farm1/90ecce/964ef5b0/DA232.css" }
     %link{ rel: "stylesheet", href: "http://t.libdd.com/css/base/rich-content.css" }
   %body
     .header
-      %h1= data.global.name
+      %h1!= data.global.name
       - if (data.global.description)
-        .description= data.global.description
+        .description!= data.global.description
     .posts
       - each post in data.posts
         .post
           - if (!post.link && post.title)
-            %h3.title= post.title
+            %h3.title!= post.title
           - if (post.link)
             %h3.title
               a{ href: post.link_url, target: '_blank' } (post.title ? post.title : post.link_url)
           - if (post.player)
-            .player= post.player
+            .player!= post.player
           - each photo in post.photos
             .img-holder
               %img{ src: photo['500'].src, alt: dian.tools.nohtml(photo.description) }
             - if (photo.description)
-              .img-desc= photo.description
+              .img-desc!= photo.description
           - if (post.description || post.content)
-            .entry.rich-content= (post.description ? post.description : post.content)
+            .entry.rich-content!= (post.description ? post.description : post.content)
 </module>
 
 <script type="server/javascript">
