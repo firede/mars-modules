@@ -20,6 +20,9 @@ D-Lab团队托管了一些开源模块，以便大家调用。
     * __moment__
     ( [主页](http://momentjs.com/) ):
     Moment.js是一个简单易用的轻量级JavaScript日期处理类库，提供了日期格式化、日期解析等功能，支持多种语言。
+    * __dot__
+    ( [主页](http://olado.github.com/doT/) ):
+    doT.js是一个高性能JavaScript模板引擎。
     * __mustache__
     ( [主页](https://github.com/janl/mustache.js) ):
     Mustache是一个少量逻辑的模板语言。
