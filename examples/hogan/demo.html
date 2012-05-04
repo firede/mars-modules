@@ -1,0 +1,17 @@
+<script type="server/javascript">
+    // 在Mars中使用Hogan.js作为模板的实例
+    // Hogan.js的使用方法请参考：http://twitter.github.com/hogan.js/
+
+    // require hogan
+    var hogan = require('dd://modules/hogan/3.0.0/hogan');
+
+    // compile template
+    var template = hogan.compile("<h1><a href='http://{{name}}.diandian.com'>{{name}}</a></h1>");
+
+    var team = ['zhaolei', 'secretworry', 'javamonk'];
+
+    team.map(function (boy) {
+        // Render context to template & output
+        write(template.render({name: boy }));
+    });
+</script>

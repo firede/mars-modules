@@ -13,7 +13,7 @@ D-Lab团队托管了一些开源模块，以便大家调用。
 * __repo__: 模块仓库
     * __underscore__
     ( [主页](http://documentcloud.github.com/underscore/) ):
-    Underscore.js是一个实用的JavaScript工具框架，提供了与Prototype.js（或Ruby）相似的功能编程支持，但没有对 JavaScript 内置的对象进行扩展。
+    Underscore.js是一个实用的JavaScript工具框架，提供了与Prototype.js（或Ruby）相似的功能编程支持，但没有对 JavaScript 内置的对象进行扩展。其中包含一个简单的模板引擎。
     * __underscore.string__
     ( [主页](http://epeli.github.com/underscore.string/) ):
     Underscore.string为Javascript提供完整的字符串操作。是Underscore.js的扩展，亦可单独使用。
@@ -29,6 +29,9 @@ D-Lab团队托管了一些开源模块，以便大家调用。
     * __haml__
     ( [主页](https://github.com/visionmedia/haml.js) | [Mars版](https://github.com/firede/haml.js) ):
     HAML是一个用来描述任何XHTML文档的标记语言。干净简单的模板引擎，这里是他的JS实现。
+    * __hogan__
+    ( [主页](http://twitter.github.com/hogan.js/) ):
+    Hogan.js是来自Twitter的JavaScript模板引擎。
     * __htmlparser__
     ( [主页](https://github.com/tautologistics/node-htmlparser) ):
     node-htmlparser是NodeJS下的HTML解析器。
