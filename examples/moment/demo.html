@@ -1,0 +1,16 @@
+<script type="server/javascript">
+    // 在 Mars 中使用 Moment.js 的简单示例
+    // Moment.js 的用法请参考：http://momentjs.com/
+    var moment = require("dd://modules/moment/1.5.0/moment");
+    // 根据 UNIX 时间戳创建日期
+    var day = moment(1318781876406);
+    
+    // 距离现在多久
+    write(day.fromNow());   // 7 months ago
+
+    write('<hr />');        // 加个分隔线
+    
+    // 切换成中文
+    moment.lang('zh-cn');
+    write(day.fromNow());   // 7个月前
+</script>
