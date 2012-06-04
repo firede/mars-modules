@@ -26,6 +26,9 @@ D-Lab团队托管了一些开源模块，以便大家调用。
     * __mustache__
     ( [主页](https://github.com/janl/mustache.js) ):
     Mustache是一个少量逻辑的模板语言。
+    * __handlebars__
+    ( [主页](http://handlebarsjs.com/) | [Mars版](https://github.com/firede/handlebars.js) ):
+    Handlebars.js是一个兼容Mustache，但功能更强大的模板引擎。
     * __haml__
     ( [主页](https://github.com/visionmedia/haml.js) | [Mars版](https://github.com/firede/haml.js) ):
     HAML是一个用来描述任何XHTML文档的标记语言。干净简单的模板引擎，这里是他的JS实现。
